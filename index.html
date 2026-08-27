@@ -3793,8 +3793,8 @@ lj1845@rd.com.br"
         let assunto, corpo;
 
         if (tipo === 'fechamento') {
-            assunto = `Monitoramento Multicanal - Desligamento de Serviços - Filial ${lojaAtual.id}`;
-            corpo = `Prezados, ${saudacao}!\n\nEncaminhamos este e-mail para informar que os serviços da Filial ${lojaAtual.id} – ${lojaAtual.nome} foram desligados devido à identificação de um erro sistêmico em nosso radar (farmácias isoladas).\n\nSolicitamos, por gentileza, que após a normalização do cenário, entrem em contato com o Suporte à Loja via chat.\n\nhttps://grupordprod.service-now.com/esc\n\nAtenciosamente,\nSuporte monitoramento.${automatico}`;
+            assunto = `Monitoramento Multicanal - Saturação desabilitada temporariamente - Filial ${lojaAtual.id}`;
+            corpo = `Prezados, boa tarde!\n\nA saturação da filial foi desabilitada temporariamente devido à ausência de avanço nos pedidos da operação, conforme monitoramento realizado:\n\nMais de 1 hora sem separação de pedidos; e/ou\nMais de 30 minutos sem faturamento (emissão de Nota Fiscal).\n\nSolicitamos priorizar a regularização da fila de pedidos. Após a normalização da operação, entrem em contato com o Suporte à Loja para avaliação da reativação da saturação.\n\nhttps://grupordprod.service-now.com/esc\n\nAtenciosamente,\nSuporte Monitoramento\n\nEste e-mail é automático. Por favor, não responda.`;
         } else {
             assunto = `Monitoramento Multicanal - Reativação de Serviços - Filial ${lojaAtual.id}`;
             corpo = `Prezados, ${saudacao}!\n\nInformamos que os serviços da filial ${lojaAtual.nome} já se encontram abertos.\n\nReforçamos que a abertura ou o fechamento de serviços deve ser realizada exclusivamente por meio do chat de Suporte de loja.\n\nhttps://grupordprod.service-now.com/esc\n\nAtenciosamente,\nSuporte monitoramento.${automatico}`;
